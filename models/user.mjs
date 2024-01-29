@@ -1,5 +1,6 @@
-// models/user.js
-const mongoose = require('mongoose');
+// models/user.mjs
+
+import mongoose from 'mongoose';
 
 const userSchema = new mongoose.Schema({
   username: { type: String, required: true },
@@ -9,4 +10,4 @@ const userSchema = new mongoose.Schema({
 
 userSchema.index({ email: 1 }); // Adding index to the email field
 
-module.exports = mongoose.model('User', userSchema);
+export default mongoose.model('User', userSchema);

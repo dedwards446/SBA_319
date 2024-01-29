@@ -4,7 +4,8 @@
   "description": "creating and api to connect to MongoDB",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.mjs"
   },
   "keywords": [
     "\u001b[A\u001b[C\u001b[C\u001b[C\u001b[C\u001b[CSBA_319"
@@ -14,6 +15,7 @@
   "dependencies": {
     "dotenv": "^16.4.1",
     "express": "^4.18.2",
+    "mongodb": "^6.3.0",
     "mongoose": "^8.1.1"
   }
 }
